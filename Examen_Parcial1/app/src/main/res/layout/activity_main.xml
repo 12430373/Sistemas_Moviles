@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_margin="15dp"
+        android:hint="Suname"
+        android:textSize="25dp"
+        android:id="@+id/nombres"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_margin="15dp"
+        android:id="@+id/name"
+        android:layout_below="@id/nombres"
+        android:layout_width="match_parent"
+
+        />
+    <TextView
+        android:layout_margin="10dp"
+        android:hint="Given Name(s)"
+        android:textSize="25dp"
+        android:id="@+id/APELLIDO"
+        android:layout_below="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_margin="15dp"
+        android:id="@+id/givenname"
+        android:layout_below="@+id/APELLIDO"
+        android:layout_width="match_parent"
+
+        />
+    <TextView
+        android:layout_margin="15dp"
+        android:hint="Date od Birth"
+        android:textSize="25dp"
+        android:id="@+id/fechas"
+        android:layout_below="@+id/givenname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <EditText
+        android:id="@+id/fecha"
+        android:layout_below="@+id/fechas"
+        android:inputType="number"
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dd/mm/yy"
+
+        />
+    <TextView
+
+        android:textSize="20dp"
+        android:id="@+id/genero"
+        android:hint="Gender"
+        android:layout_margin="25dp"
+        android:layout_below="@id/fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_below="@+id/genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ADDRESS"
+        android:inputType="text"
+        android:layout_below="@id/botones"
+        />
+</RelativeLayout>
